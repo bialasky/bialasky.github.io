@@ -1,0 +1,35 @@
+main {
+  margin: 0 auto;
+  width: 100%;
+  background: #f9f9eb;
+}
+
+.wrapper {
+  max-width: 1500px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  display: flex;
+  width: 300px;
+  margin: 0px;
+  border: 0.5px solid red;
+  border-radius: 3px;
+  flex-grow: 1;
+  margin: 8px;
+}
+
+@media (max-width: 1200px) {
+  .item {
+    min-width: 33.33%; 
+  }
+}
+
+.item:nth-child(odd) {
+    background: #f5f5dc
+}
+
+.item:nth-child(even) {
+    background: #ccffff
+}
